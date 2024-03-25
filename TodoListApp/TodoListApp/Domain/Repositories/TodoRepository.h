@@ -5,12 +5,15 @@
 //  Created by psagc on 25/03/24.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+@class TodoItem;
 
-NS_ASSUME_NONNULL_BEGIN
+@protocol TodoRepository <NSObject>
 
-@interface TodoRepository : NSObject
+- (NSArray *)fetchAllTask;
+- (void)addTodoItem:(TodoItem *)todoItem;
+
 
 @end
 
-NS_ASSUME_NONNULL_END
+

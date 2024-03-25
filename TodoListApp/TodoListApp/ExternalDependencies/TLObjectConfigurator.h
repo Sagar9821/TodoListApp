@@ -1,16 +1,9 @@
-//
-//  TLObjectConfigurator.h
-//  TodoListApp
-//
-//  Created by psagc on 25/03/24.
-//
-
-#import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
+@import Foundation;
+#import "TodoListViewController.h"
 
 @interface TLObjectConfigurator : NSObject
-
++(TLObjectConfigurator*)sharedInstance;
+-(TodoListViewController*)todoListController;
 @end
 
-NS_ASSUME_NONNULL_END
+

@@ -5,12 +5,10 @@
 //  Created by psagc on 25/03/24.
 //
 
-#import <UIKit/UIKit.h>
-
-NS_ASSUME_NONNULL_BEGIN
+@import UIKit;
+@class TodoListInteractor;
 
 @interface TodoListViewController : UIViewController
-
+- (instancetype)initWithInteractor:(TodoListInteractor*)interactor;
 @end
 
-NS_ASSUME_NONNULL_END

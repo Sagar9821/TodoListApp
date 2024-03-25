@@ -5,12 +5,10 @@
 //  Created by psagc on 25/03/24.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface TaskTableView : NSObject
-
+@interface TaskTableView :  NSObject <UITableViewDataSource>
+- (instancetype)initWithArray:(NSArray *)tasks;
 @end
 
-NS_ASSUME_NONNULL_END
+

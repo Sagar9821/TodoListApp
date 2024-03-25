@@ -6,6 +6,9 @@
 //
 
 #import "ToDoListAppDelegate.h"
+#import "TLObjectConfigurator.h"
+#import "TodoListViewController.h"
+#import <UIKit/UIKit.h>
 
 @interface ToDoListAppDelegate ()
 
@@ -16,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    TodoListViewController *todoListController = [[TLObjectConfigurator sharedInstance] todoListController];
+    UINavigationController *todoListNavController = [[UINavigationController alloc] initWithRootViewController:todoListController];
+    self.window.rootViewController = todoListNavController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
