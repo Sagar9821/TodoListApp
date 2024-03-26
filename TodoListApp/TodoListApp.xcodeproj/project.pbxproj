@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E14BD922BB29842002739E7 /* UIView+Reusable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BD912BB29842002739E7 /* UIView+Reusable.m */; };
+		6E14BD962BB2A003002739E7 /* UITableView+Reusable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BD952BB2A003002739E7 /* UITableView+Reusable.m */; };
+		6E14BD9B2BB2A610002739E7 /* CreateTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BD992BB2A610002739E7 /* CreateTaskViewController.m */; };
+		6E14BD9C2BB2A610002739E7 /* CreateTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E14BD9A2BB2A610002739E7 /* CreateTaskViewController.xib */; };
+		6E14BDA02BB2A742002739E7 /* CreateTaskInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BD9F2BB2A742002739E7 /* CreateTaskInteractor.m */; };
+		6E14BDA32BB2B2CC002739E7 /* TodoRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BDA22BB2B2CC002739E7 /* TodoRouter.m */; };
+		6E14BDA82BB2F12C002739E7 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BDA72BB2F12C002739E7 /* CustomTextField.m */; };
+		6E14BDAB2BB2F2B3002739E7 /* AppColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BDAA2BB2F2B3002739E7 /* AppColors.m */; };
+		6E14BDC72BB335A5002739E7 /* TodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BDC52BB335A5002739E7 /* TodoItem.m */; };
+		6E14BDD32BB3431A002739E7 /* db_model_v1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BDD12BB3431A002739E7 /* db_model_v1.xcdatamodeld */; };
+		6E14BDD52BB34351002739E7 /* TaskCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BDD42BB34351002739E7 /* TaskCoreDataManager.swift */; };
 		6EB73E902BB1AB4000D2E496 /* TaskTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB73E8F2BB1AB4000D2E496 /* TaskTableView.m */; };
 		6EB73E942BB1C06D00D2E496 /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB73E922BB1C06D00D2E496 /* TaskCell.m */; };
 		6EB73E952BB1C06D00D2E496 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB73E932BB1C06D00D2E496 /* TaskCell.xib */; };
@@ -20,7 +31,6 @@
 		6EC375C32BB19D05005DCC85 /* TodoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC375C12BB19D05005DCC85 /* TodoListViewController.m */; };
 		6EC375C42BB19D05005DCC85 /* TodoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EC375C22BB19D05005DCC85 /* TodoListViewController.xib */; };
 		6EC375C72BB19E78005DCC85 /* TLObjectConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC375C62BB19E78005DCC85 /* TLObjectConfigurator.m */; };
-		6EC375CB2BB1A175005DCC85 /* TodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC375CA2BB1A175005DCC85 /* TodoItem.m */; };
 		6EC375D02BB1A1A3005DCC85 /* TodoListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC375CF2BB1A1A3005DCC85 /* TodoListInteractor.m */; };
 		6EC375D72BB1A506005DCC85 /* CoreDataTodoRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC375D62BB1A506005DCC85 /* CoreDataTodoRepository.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +53,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E14BD902BB29842002739E7 /* UIView+Reusable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Reusable.h"; sourceTree = "<group>"; };
+		6E14BD912BB29842002739E7 /* UIView+Reusable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Reusable.m"; sourceTree = "<group>"; };
+		6E14BD932BB29FC7002739E7 /* ReusableViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReusableViewProtocol.h; sourceTree = "<group>"; };
+		6E14BD942BB2A003002739E7 /* UITableView+Reusable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Reusable.h"; sourceTree = "<group>"; };
+		6E14BD952BB2A003002739E7 /* UITableView+Reusable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Reusable.m"; sourceTree = "<group>"; };
+		6E14BD982BB2A610002739E7 /* CreateTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateTaskViewController.h; sourceTree = "<group>"; };
+		6E14BD992BB2A610002739E7 /* CreateTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateTaskViewController.m; sourceTree = "<group>"; };
+		6E14BD9A2BB2A610002739E7 /* CreateTaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateTaskViewController.xib; sourceTree = "<group>"; };
+		6E14BD9E2BB2A742002739E7 /* CreateTaskInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateTaskInteractor.h; sourceTree = "<group>"; };
+		6E14BD9F2BB2A742002739E7 /* CreateTaskInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateTaskInteractor.m; sourceTree = "<group>"; };
+		6E14BDA12BB2B2CC002739E7 /* TodoRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoRouter.h; sourceTree = "<group>"; };
+		6E14BDA22BB2B2CC002739E7 /* TodoRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoRouter.m; sourceTree = "<group>"; };
+		6E14BDA62BB2F12C002739E7 /* CustomTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		6E14BDA72BB2F12C002739E7 /* CustomTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		6E14BDA92BB2F2B3002739E7 /* AppColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppColors.h; sourceTree = "<group>"; };
+		6E14BDAA2BB2F2B3002739E7 /* AppColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppColors.m; sourceTree = "<group>"; };
+		6E14BDC52BB335A5002739E7 /* TodoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoItem.m; sourceTree = "<group>"; };
+		6E14BDC62BB335A5002739E7 /* TodoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoItem.h; sourceTree = "<group>"; };
+		6E14BDD22BB3431A002739E7 /* db_model_v1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = db_model_v1.xcdatamodel; sourceTree = "<group>"; };
+		6E14BDD42BB34351002739E7 /* TaskCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCoreDataManager.swift; sourceTree = "<group>"; };
+		6E14BDD62BB344B6002739E7 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		6EB73E8E2BB1AB4000D2E496 /* TaskTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskTableView.h; sourceTree = "<group>"; };
 		6EB73E8F2BB1AB4000D2E496 /* TaskTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskTableView.m; sourceTree = "<group>"; };
 		6EB73E912BB1C06D00D2E496 /* TaskCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
@@ -65,8 +96,6 @@
 		6EC375C22BB19D05005DCC85 /* TodoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoListViewController.xib; sourceTree = "<group>"; };
 		6EC375C52BB19E78005DCC85 /* TLObjectConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLObjectConfigurator.h; sourceTree = "<group>"; };
 		6EC375C62BB19E78005DCC85 /* TLObjectConfigurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLObjectConfigurator.m; sourceTree = "<group>"; };
-		6EC375C92BB1A175005DCC85 /* TodoItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoItem.h; sourceTree = "<group>"; };
-		6EC375CA2BB1A175005DCC85 /* TodoItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoItem.m; sourceTree = "<group>"; };
 		6EC375CE2BB1A1A3005DCC85 /* TodoListInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoListInteractor.h; sourceTree = "<group>"; };
 		6EC375CF2BB1A1A3005DCC85 /* TodoListInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoListInteractor.m; sourceTree = "<group>"; };
 		6EC375D22BB1A1BC005DCC85 /* TodoRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoRepository.h; sourceTree = "<group>"; };
@@ -99,6 +128,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E14BD8E2BB2981E002739E7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6E14BD8F2BB2982A002739E7 /* ReusableExtensions */,
+				6E14BDD62BB344B6002739E7 /* Bridging-Header.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6E14BD8F2BB2982A002739E7 /* ReusableExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E14BD902BB29842002739E7 /* UIView+Reusable.h */,
+				6E14BD912BB29842002739E7 /* UIView+Reusable.m */,
+				6E14BD932BB29FC7002739E7 /* ReusableViewProtocol.h */,
+				6E14BD942BB2A003002739E7 /* UITableView+Reusable.h */,
+				6E14BD952BB2A003002739E7 /* UITableView+Reusable.m */,
+				6E14BDA92BB2F2B3002739E7 /* AppColors.h */,
+				6E14BDAA2BB2F2B3002739E7 /* AppColors.m */,
+			);
+			path = ReusableExtensions;
+			sourceTree = "<group>";
+		};
+		6E14BD972BB2A604002739E7 /* CreateTask */ = {
+			isa = PBXGroup;
+			children = (
+				6E14BD982BB2A610002739E7 /* CreateTaskViewController.h */,
+				6E14BD992BB2A610002739E7 /* CreateTaskViewController.m */,
+				6E14BD9A2BB2A610002739E7 /* CreateTaskViewController.xib */,
+			);
+			path = CreateTask;
+			sourceTree = "<group>";
+		};
+		6E14BD9D2BB2A72B002739E7 /* CreateTask */ = {
+			isa = PBXGroup;
+			children = (
+				6E14BD9E2BB2A742002739E7 /* CreateTaskInteractor.h */,
+				6E14BD9F2BB2A742002739E7 /* CreateTaskInteractor.m */,
+			);
+			path = CreateTask;
+			sourceTree = "<group>";
+		};
+		6E14BDA42BB2F0FC002739E7 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				6E14BDA52BB2F10F002739E7 /* TextField */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		6E14BDA52BB2F10F002739E7 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				6E14BDA62BB2F12C002739E7 /* CustomTextField.h */,
+				6E14BDA72BB2F12C002739E7 /* CustomTextField.m */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		6E14BDBE2BB30DA5002739E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E14BDD02BB3431A002739E7 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				6E14BDD12BB3431A002739E7 /* db_model_v1.xcdatamodeld */,
+				6E14BDD42BB34351002739E7 /* TaskCoreDataManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		6EC375762BB19A12005DCC85 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +226,8 @@
 		6EC375812BB19A12005DCC85 /* TodoListApp */ = {
 			isa = PBXGroup;
 			children = (
+				6E14BDA42BB2F0FC002739E7 /* CustomViews */,
+				6E14BD8E2BB2981E002739E7 /* Common */,
 				6EC375BB2BB19B25005DCC85 /* Application */,
 				6EC375BA2BB19AB2005DCC85 /* ExternalDependencies */,
 				6EC375B92BB19AA6005DCC85 /* Presentation */,
@@ -172,7 +278,10 @@
 		6EC375B92BB19AA6005DCC85 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				6E14BD972BB2A604002739E7 /* CreateTask */,
 				6EC375BC2BB19CDB005DCC85 /* TodoList */,
+				6E14BDA12BB2B2CC002739E7 /* TodoRouter.h */,
+				6E14BDA22BB2B2CC002739E7 /* TodoRouter.m */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -180,6 +289,8 @@
 		6EC375BA2BB19AB2005DCC85 /* ExternalDependencies */ = {
 			isa = PBXGroup;
 			children = (
+				6E14BDD02BB3431A002739E7 /* Database */,
+				6E14BDBE2BB30DA5002739E7 /* Models */,
 				6EC375C52BB19E78005DCC85 /* TLObjectConfigurator.h */,
 				6EC375C62BB19E78005DCC85 /* TLObjectConfigurator.m */,
 			);
@@ -213,8 +324,8 @@
 		6EC375C82BB1A156005DCC85 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				6EC375C92BB1A175005DCC85 /* TodoItem.h */,
-				6EC375CA2BB1A175005DCC85 /* TodoItem.m */,
+				6E14BDC62BB335A5002739E7 /* TodoItem.h */,
+				6E14BDC52BB335A5002739E7 /* TodoItem.m */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -222,6 +333,7 @@
 		6EC375CC2BB1A18D005DCC85 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				6E14BD9D2BB2A72B002739E7 /* CreateTask */,
 				6EC375CD2BB1A197005DCC85 /* TodoList */,
 			);
 			path = UseCases;
@@ -313,6 +425,7 @@
 				TargetAttributes = {
 					6EC3757E2BB19A12005DCC85 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 					6EC375992BB19A14005DCC85 = {
 						CreatedOnToolsVersion = 15.0;
@@ -352,6 +465,7 @@
 				6EB73E952BB1C06D00D2E496 /* TaskCell.xib in Resources */,
 				6EC375C42BB19D05005DCC85 /* TodoListViewController.xib in Resources */,
 				6EC375922BB19A14005DCC85 /* LaunchScreen.storyboard in Resources */,
+				6E14BD9C2BB2A610002739E7 /* CreateTaskViewController.xib in Resources */,
 				6EC3758F2BB19A14005DCC85 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,14 +492,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EB73E902BB1AB4000D2E496 /* TaskTableView.m in Sources */,
+				6E14BDC72BB335A5002739E7 /* TodoItem.m in Sources */,
 				6EC375D72BB1A506005DCC85 /* CoreDataTodoRepository.m in Sources */,
+				6E14BDD52BB34351002739E7 /* TaskCoreDataManager.swift in Sources */,
 				6EC375D02BB1A1A3005DCC85 /* TodoListInteractor.m in Sources */,
+				6E14BD962BB2A003002739E7 /* UITableView+Reusable.m in Sources */,
 				6EC375842BB19A12005DCC85 /* ToDoListAppDelegate.m in Sources */,
 				6EC375952BB19A14005DCC85 /* main.m in Sources */,
+				6E14BDA32BB2B2CC002739E7 /* TodoRouter.m in Sources */,
+				6E14BDD32BB3431A002739E7 /* db_model_v1.xcdatamodeld in Sources */,
 				6EC375C32BB19D05005DCC85 /* TodoListViewController.m in Sources */,
+				6E14BD9B2BB2A610002739E7 /* CreateTaskViewController.m in Sources */,
+				6E14BDAB2BB2F2B3002739E7 /* AppColors.m in Sources */,
 				6EB73E942BB1C06D00D2E496 /* TaskCell.m in Sources */,
+				6E14BD922BB29842002739E7 /* UIView+Reusable.m in Sources */,
+				6E14BDA02BB2A742002739E7 /* CreateTaskInteractor.m in Sources */,
 				6EC375C72BB19E78005DCC85 /* TLObjectConfigurator.m in Sources */,
-				6EC375CB2BB1A175005DCC85 /* TodoItem.m in Sources */,
+				6E14BDA82BB2F12C002739E7 /* CustomTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +677,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -562,7 +686,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,6 +698,9 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoListApp/Common/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -583,6 +710,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -591,7 +719,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -603,6 +731,8 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoListApp/Common/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -610,6 +740,7 @@
 		6EC375B22BB19A14005DCC85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -627,6 +758,7 @@
 		6EC375B32BB19A14005DCC85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -644,6 +776,7 @@
 		6EC375B52BB19A14005DCC85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -659,6 +792,7 @@
 		6EC375B62BB19A14005DCC85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -711,6 +845,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6E14BDD12BB3431A002739E7 /* db_model_v1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6E14BDD22BB3431A002739E7 /* db_model_v1.xcdatamodel */,
+			);
+			currentVersion = 6E14BDD22BB3431A002739E7 /* db_model_v1.xcdatamodel */;
+			path = db_model_v1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6EC375772BB19A12005DCC85 /* Project object */;
 }

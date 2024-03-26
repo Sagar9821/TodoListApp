@@ -20,14 +20,19 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zAa-T0-xzC">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zAa-T0-xzC">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zAa-T0-xzC" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="d1f-kl-6jD"/>
+                <constraint firstItem="zAa-T0-xzC" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="gzp-hb-UfV"/>
+                <constraint firstItem="zAa-T0-xzC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="kFt-JW-yOE"/>
+                <constraint firstItem="zAa-T0-xzC" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="z1T-7y-rvT"/>
+            </constraints>
             <point key="canvasLocation" x="95.419847328244273" y="-11.267605633802818"/>
         </view>
     </objects>

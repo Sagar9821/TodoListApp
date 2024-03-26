@@ -5,10 +5,16 @@
 //  Created by psagc on 25/03/24.
 //
 
-@import UIKit;
+#import "UIKit/UIKit.h"
+#import "TaskCell.h"
+#import "TodoItem.h"
 
-@interface TaskTableView :  NSObject <UITableViewDataSource>
-- (instancetype)initWithArray:(NSArray *)tasks;
+typedef void(^SelectedTaskBlock)(TodoItem  *item);
+
+
+@interface TaskTableView :  NSObject <UITableViewDataSource,UITableViewDelegate>
+-(instancetype)initWithArray:(NSArray *)tasks;
+@property (nonatomic, copy) SelectedTaskBlock taskSelectedBlock;
 @end
 
 

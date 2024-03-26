@@ -1,14 +1,14 @@
 //
-//  TodoListInteractor.m
+//  CreateTaskInteractor.m
 //  TodoListApp
 //
-//  Created by psagc on 25/03/24.
+//  Created by psagc on 26/03/24.
 //
 
-#import "TodoListInteractor.h"
+#import "CreateTaskInteractor.h"
+#import "TodoItem.h"
 
-@implementation TodoListInteractor
-
+@implementation CreateTaskInteractor
 - (instancetype)initWithTodoRepository:(id<TodoRepository>)todoRepository {
     self = [super init];
     if (self) {
@@ -22,9 +22,7 @@
 }
 
 -(void)addTodoItemWithTitle:(NSString *)title andDescription:(NSString *)description {
-    
-}
--(void)completeTask:(TodoItem *)todoItem {
-    [self.todoRepository updateTodoItem:todoItem];
+    TodoItem *item = [[TodoItem alloc] initWithTitle:title andDescription:description andIsCompleted:TRUE];
+    [self.todoRepository addTodoItem:item];
 }
 @end

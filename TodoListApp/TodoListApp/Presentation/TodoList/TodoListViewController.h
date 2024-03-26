@@ -8,7 +8,11 @@
 @import UIKit;
 @class TodoListInteractor;
 
+typedef void(^CreateTaskBlock)(void);
+
+
 @interface TodoListViewController : UIViewController
 - (instancetype)initWithInteractor:(TodoListInteractor*)interactor;
+@property (nonatomic, copy) CreateTaskBlock createTaskBlock;
 @end
 
