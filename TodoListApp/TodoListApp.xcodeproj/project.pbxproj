@@ -18,6 +18,9 @@
 		6E14BDC72BB335A5002739E7 /* TodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BDC52BB335A5002739E7 /* TodoItem.m */; };
 		6E14BDD32BB3431A002739E7 /* db_model_v1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BDD12BB3431A002739E7 /* db_model_v1.xcdatamodeld */; };
 		6E14BDD52BB34351002739E7 /* TaskCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E14BDD42BB34351002739E7 /* TaskCoreDataManager.swift */; };
+		6E98AA512BB584E800370406 /* UIViewController+Reusable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E98AA502BB584E800370406 /* UIViewController+Reusable.m */; };
+		6E98AA542BB5873500370406 /* ValidationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E98AA532BB5873500370406 /* ValidationHelper.m */; };
+		6E98AA5A2BB5922C00370406 /* NSDate+Reusable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E98AA592BB5922C00370406 /* NSDate+Reusable.m */; };
 		6EB73E902BB1AB4000D2E496 /* TaskTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB73E8F2BB1AB4000D2E496 /* TaskTableView.m */; };
 		6EB73E942BB1C06D00D2E496 /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB73E922BB1C06D00D2E496 /* TaskCell.m */; };
 		6EB73E952BB1C06D00D2E496 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB73E932BB1C06D00D2E496 /* TaskCell.xib */; };
@@ -33,6 +36,10 @@
 		6EC375C72BB19E78005DCC85 /* TLObjectConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC375C62BB19E78005DCC85 /* TLObjectConfigurator.m */; };
 		6EC375D02BB1A1A3005DCC85 /* TodoListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC375CF2BB1A1A3005DCC85 /* TodoListInteractor.m */; };
 		6EC375D72BB1A506005DCC85 /* CoreDataTodoRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC375D62BB1A506005DCC85 /* CoreDataTodoRepository.m */; };
+		6ECBA00C2BB3DDC2001C660C /* UILabel+Strikethrough.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBA00B2BB3DDC2001C660C /* UILabel+Strikethrough.m */; };
+		6ECBA0142BB40369001C660C /* TasksDatesCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBA0132BB40369001C660C /* TasksDatesCollectionView.m */; };
+		6ECBA0182BB40535001C660C /* TaskDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBA0162BB40535001C660C /* TaskDateCell.m */; };
+		6ECBA0192BB40535001C660C /* TaskDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECBA0172BB40535001C660C /* TaskDateCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +81,12 @@
 		6E14BDD22BB3431A002739E7 /* db_model_v1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = db_model_v1.xcdatamodel; sourceTree = "<group>"; };
 		6E14BDD42BB34351002739E7 /* TaskCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCoreDataManager.swift; sourceTree = "<group>"; };
 		6E14BDD62BB344B6002739E7 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		6E98AA4F2BB584E800370406 /* UIViewController+Reusable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Reusable.h"; sourceTree = "<group>"; };
+		6E98AA502BB584E800370406 /* UIViewController+Reusable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Reusable.m"; sourceTree = "<group>"; };
+		6E98AA522BB5873500370406 /* ValidationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidationHelper.h; sourceTree = "<group>"; };
+		6E98AA532BB5873500370406 /* ValidationHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidationHelper.m; sourceTree = "<group>"; };
+		6E98AA582BB5922C00370406 /* NSDate+Reusable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Reusable.h"; sourceTree = "<group>"; };
+		6E98AA592BB5922C00370406 /* NSDate+Reusable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Reusable.m"; sourceTree = "<group>"; };
 		6EB73E8E2BB1AB4000D2E496 /* TaskTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskTableView.h; sourceTree = "<group>"; };
 		6EB73E8F2BB1AB4000D2E496 /* TaskTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskTableView.m; sourceTree = "<group>"; };
 		6EB73E912BB1C06D00D2E496 /* TaskCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
@@ -101,6 +114,13 @@
 		6EC375D22BB1A1BC005DCC85 /* TodoRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoRepository.h; sourceTree = "<group>"; };
 		6EC375D52BB1A506005DCC85 /* CoreDataTodoRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataTodoRepository.h; sourceTree = "<group>"; };
 		6EC375D62BB1A506005DCC85 /* CoreDataTodoRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTodoRepository.m; sourceTree = "<group>"; };
+		6ECBA00A2BB3DDC2001C660C /* UILabel+Strikethrough.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Strikethrough.h"; sourceTree = "<group>"; };
+		6ECBA00B2BB3DDC2001C660C /* UILabel+Strikethrough.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Strikethrough.m"; sourceTree = "<group>"; };
+		6ECBA0122BB40369001C660C /* TasksDatesCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TasksDatesCollectionView.h; sourceTree = "<group>"; };
+		6ECBA0132BB40369001C660C /* TasksDatesCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TasksDatesCollectionView.m; sourceTree = "<group>"; };
+		6ECBA0152BB40535001C660C /* TaskDateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskDateCell.h; sourceTree = "<group>"; };
+		6ECBA0162BB40535001C660C /* TaskDateCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskDateCell.m; sourceTree = "<group>"; };
+		6ECBA0172BB40535001C660C /* TaskDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskDateCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +153,8 @@
 			children = (
 				6E14BD8F2BB2982A002739E7 /* ReusableExtensions */,
 				6E14BDD62BB344B6002739E7 /* Bridging-Header.h */,
+				6E98AA522BB5873500370406 /* ValidationHelper.h */,
+				6E98AA532BB5873500370406 /* ValidationHelper.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -147,6 +169,12 @@
 				6E14BD952BB2A003002739E7 /* UITableView+Reusable.m */,
 				6E14BDA92BB2F2B3002739E7 /* AppColors.h */,
 				6E14BDAA2BB2F2B3002739E7 /* AppColors.m */,
+				6ECBA00A2BB3DDC2001C660C /* UILabel+Strikethrough.h */,
+				6ECBA00B2BB3DDC2001C660C /* UILabel+Strikethrough.m */,
+				6E98AA4F2BB584E800370406 /* UIViewController+Reusable.h */,
+				6E98AA502BB584E800370406 /* UIViewController+Reusable.m */,
+				6E98AA582BB5922C00370406 /* NSDate+Reusable.h */,
+				6E98AA592BB5922C00370406 /* NSDate+Reusable.m */,
 			);
 			path = ReusableExtensions;
 			sourceTree = "<group>";
@@ -317,6 +345,11 @@
 				6EB73E912BB1C06D00D2E496 /* TaskCell.h */,
 				6EB73E922BB1C06D00D2E496 /* TaskCell.m */,
 				6EB73E932BB1C06D00D2E496 /* TaskCell.xib */,
+				6ECBA0122BB40369001C660C /* TasksDatesCollectionView.h */,
+				6ECBA0132BB40369001C660C /* TasksDatesCollectionView.m */,
+				6ECBA0152BB40535001C660C /* TaskDateCell.h */,
+				6ECBA0162BB40535001C660C /* TaskDateCell.m */,
+				6ECBA0172BB40535001C660C /* TaskDateCell.xib */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -462,6 +495,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ECBA0192BB40535001C660C /* TaskDateCell.xib in Resources */,
 				6EB73E952BB1C06D00D2E496 /* TaskCell.xib in Resources */,
 				6EC375C42BB19D05005DCC85 /* TodoListViewController.xib in Resources */,
 				6EC375922BB19A14005DCC85 /* LaunchScreen.storyboard in Resources */,
@@ -492,11 +526,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EB73E902BB1AB4000D2E496 /* TaskTableView.m in Sources */,
+				6ECBA0182BB40535001C660C /* TaskDateCell.m in Sources */,
 				6E14BDC72BB335A5002739E7 /* TodoItem.m in Sources */,
 				6EC375D72BB1A506005DCC85 /* CoreDataTodoRepository.m in Sources */,
+				6ECBA0142BB40369001C660C /* TasksDatesCollectionView.m in Sources */,
 				6E14BDD52BB34351002739E7 /* TaskCoreDataManager.swift in Sources */,
 				6EC375D02BB1A1A3005DCC85 /* TodoListInteractor.m in Sources */,
 				6E14BD962BB2A003002739E7 /* UITableView+Reusable.m in Sources */,
+				6ECBA00C2BB3DDC2001C660C /* UILabel+Strikethrough.m in Sources */,
+				6E98AA5A2BB5922C00370406 /* NSDate+Reusable.m in Sources */,
+				6E98AA512BB584E800370406 /* UIViewController+Reusable.m in Sources */,
 				6EC375842BB19A12005DCC85 /* ToDoListAppDelegate.m in Sources */,
 				6EC375952BB19A14005DCC85 /* main.m in Sources */,
 				6E14BDA32BB2B2CC002739E7 /* TodoRouter.m in Sources */,
@@ -505,6 +544,7 @@
 				6E14BD9B2BB2A610002739E7 /* CreateTaskViewController.m in Sources */,
 				6E14BDAB2BB2F2B3002739E7 /* AppColors.m in Sources */,
 				6EB73E942BB1C06D00D2E496 /* TaskCell.m in Sources */,
+				6E98AA542BB5873500370406 /* ValidationHelper.m in Sources */,
 				6E14BD922BB29842002739E7 /* UIView+Reusable.m in Sources */,
 				6E14BDA02BB2A742002739E7 /* CreateTaskInteractor.m in Sources */,
 				6EC375C72BB19E78005DCC85 /* TLObjectConfigurator.m in Sources */,
@@ -686,7 +726,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -719,7 +759,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

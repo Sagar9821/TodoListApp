@@ -16,7 +16,7 @@
 
 -(instancetype)initWithWindow:(UIWindow*)window;
 -(void)start;
--(void)navigateToCreateTask;
+-(void)navigateToCreateTaskFor:(NSDate*)date;
 
 @end
 

@@ -14,4 +14,7 @@
 -(NSArray *)fetchAllTask;
 - (void)addTodoItemWithTitle:(NSString *)title andDescription:(NSString *)description;
 - (void)completeTask:(TodoItem *)todoItem;
+- (NSMutableArray<TodoItem *> *)tasksForDate:(NSDate *)date;
+- (NSArray<NSDate *> *)datesForCurrentYear;
+-(void)deleteTask:(TodoItem*)task;
 @end

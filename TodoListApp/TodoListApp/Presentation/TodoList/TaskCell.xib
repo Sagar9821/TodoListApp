@@ -4,93 +4,57 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="TaskCell">
-            <rect key="frame" x="0.0" y="0.0" width="360" height="124"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="86" id="KGk-i7-Jjw" customClass="TaskCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="86"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="360" height="124"/>
+                <rect key="frame" x="0.0" y="0.0" width="360" height="86"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3sk-Jm-yJn">
-                        <rect key="frame" x="16" y="5" width="328" height="88.666666666666671"/>
+                        <rect key="frame" x="16" y="5" width="328" height="76"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KNX-nw-Ovm">
-                                <rect key="frame" x="99.999999999999986" y="15.999999999999996" width="149.66666666666663" height="56.666666666666657"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u64-k5-RdG">
+                                <rect key="frame" x="16.000000000000007" y="16" width="110.66666666666669" height="44"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="u64-k5-RdG">
-                                        <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="56.666666666666664"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="take out trash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmw-Wf-hk7">
-                                                <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                <color key="textColor" name="midBlue"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="take out trash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7z-L5-Pj8">
-                                                <rect key="frame" x="0.0" y="36.333333333333336" width="109.66666666666667" height="20.333333333333336"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                <color key="textColor" name="midBlue"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9a-et-UO0">
-                                        <rect key="frame" x="119.66666666666666" y="0.0" width="30" height="56.666666666666664"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="H2z-EE-grt"/>
-                                            <constraint firstAttribute="width" constant="30" id="xWm-B9-Sp4"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal">
-                                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large" renderingMode="hierarchical">
-                                                <hierarchicalColors>
-                                                    <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color systemColor="secondaryLabelColor"/>
-                                                    <color systemColor="tertiaryLabelColor"/>
-                                                </hierarchicalColors>
-                                            </imageReference>
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="large"/>
-                                        </state>
-                                        <state key="selected">
-                                            <imageReference key="image" image="checkmark.circle.fill" catalog="system" renderingMode="hierarchical" variableValue="0.80000000000000004">
-                                                <hierarchicalColors>
-                                                    <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color name="midBlue"/>
-                                                    <color name="midBlue"/>
-                                                </hierarchicalColors>
-                                            </imageReference>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapOnComplete:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="W1V-Yk-MlH"/>
-                                        </connections>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="take out trash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmw-Wf-hk7">
+                                        <rect key="frame" x="0.0" y="0.0" width="110.66666666666667" height="21.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="midBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="take out trash" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7z-L5-Pj8">
+                                        <rect key="frame" x="0.0" y="31.666666666666661" width="110.66666666666667" height="12.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <color key="textColor" name="midBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bev-HW-gFS">
-                                <rect key="frame" x="16" y="15.999999999999998" width="68" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" name="midBlue"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZLw-ac-Syw">
+                                <rect key="frame" x="282" y="11.999999999999998" width="30" height="28.666666666666664"/>
+                                <color key="tintColor" name="midBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="3CF-AW-oNz"/>
+                                    <constraint firstAttribute="height" constant="30" id="SyF-4f-cbb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" name="tint"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KNX-nw-Ovm" secondAttribute="trailing" constant="16" id="BvG-c6-JCC"/>
-                            <constraint firstItem="Bev-HW-gFS" firstAttribute="top" secondItem="3sk-Jm-yJn" secondAttribute="top" constant="16" id="Huf-ft-H2M"/>
-                            <constraint firstItem="KNX-nw-Ovm" firstAttribute="leading" secondItem="Bev-HW-gFS" secondAttribute="trailing" constant="16" id="TV5-9k-yoo"/>
-                            <constraint firstItem="Bev-HW-gFS" firstAttribute="leading" secondItem="3sk-Jm-yJn" secondAttribute="leading" constant="16" id="VtQ-4K-1LJ"/>
-                            <constraint firstAttribute="bottom" secondItem="KNX-nw-Ovm" secondAttribute="bottom" constant="16" id="XbZ-ay-Ck4"/>
-                            <constraint firstItem="KNX-nw-Ovm" firstAttribute="top" secondItem="3sk-Jm-yJn" secondAttribute="top" constant="16" id="sPy-IU-82E"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="u64-k5-RdG" secondAttribute="bottom" constant="16" id="45j-2q-vPx"/>
+                            <constraint firstItem="ZLw-ac-Syw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="u64-k5-RdG" secondAttribute="trailing" constant="16" id="JYR-9e-hSK"/>
+                            <constraint firstItem="u64-k5-RdG" firstAttribute="leading" secondItem="3sk-Jm-yJn" secondAttribute="leading" constant="16" id="OJ9-YO-A0K"/>
+                            <constraint firstItem="ZLw-ac-Syw" firstAttribute="top" secondItem="u64-k5-RdG" secondAttribute="top" constant="-5" id="c8n-4O-4dU"/>
+                            <constraint firstItem="u64-k5-RdG" firstAttribute="top" secondItem="3sk-Jm-yJn" secondAttribute="top" constant="16" id="mfq-iH-fFs"/>
+                            <constraint firstAttribute="trailing" secondItem="ZLw-ac-Syw" secondAttribute="trailing" constant="16" id="whz-4L-4hP"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -105,28 +69,21 @@
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="buttonComplete" destination="n9a-et-UO0" id="seR-gm-hBS"/>
                 <outlet property="containerView" destination="3sk-Jm-yJn" id="Thz-ha-CiT"/>
+                <outlet property="imageViewComplete" destination="ZLw-ac-Syw" id="Ght-Sc-XjI"/>
                 <outlet property="taskDescriptionLabel" destination="v7z-L5-Pj8" id="3ez-Nk-ZEM"/>
                 <outlet property="taskLabel" destination="Cmw-Wf-hk7" id="sDu-15-X9b"/>
             </connections>
-            <point key="canvasLocation" x="-38.167938931297705" y="10.563380281690142"/>
+            <point key="canvasLocation" x="-38.167938931297705" y="-2.8169014084507045"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="midBlue">
             <color red="0.17254901960784313" green="0.32549019607843138" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="tint">
             <color red="0.8901960784313725" green="0.93333333333333335" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

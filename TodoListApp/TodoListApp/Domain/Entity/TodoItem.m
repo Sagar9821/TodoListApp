@@ -9,12 +9,13 @@
 #import "TodoListApp-Swift.h"
 
 @implementation TodoItem
-- (instancetype)initWithTitle:(NSString*)taskTitle andDescription:(NSString*)taskDescription andIsCompleted:(BOOL)isTaskCompleted {
+- (instancetype)initWithTitle:(NSString*)taskTitle andDescription:(NSString*)taskDescription andIsCompleted:(BOOL)isTaskCompleted andCreationDate:(NSDate*)creationDate{
     self = [self init];
     if (self) {        
         _taskTitle = taskTitle;
         _taskDescription = taskDescription;
         _isTaskCompleted = isTaskCompleted;
+        _creationDate = creationDate;
     }
     return self;
 }
@@ -25,6 +26,7 @@
         _taskTitle = managedObject.taskTitle;
         _taskDescription = managedObject.taskDescription;
         _isTaskCompleted = managedObject.isCompleted;
+        _creationDate = managedObject.createdAt;
     }
     return  self;
 }

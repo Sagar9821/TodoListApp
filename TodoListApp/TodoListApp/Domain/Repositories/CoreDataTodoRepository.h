@@ -7,9 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import "TodoRepository.h"
-
+#import "TodoListApp-Swift.h"
 @interface CoreDataTodoRepository : NSObject<TodoRepository>
-
+-(instancetype)initWithTaskManager:(TaskCoreDataManager*)taskCoreDataManager;
 @end
 
 

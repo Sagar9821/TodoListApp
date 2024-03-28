@@ -26,10 +26,18 @@
     
     return sharedInstance;
 }
+
+#pragma mark - Creating CoreData Repo
+-(TaskCoreDataManager*)taskCoreDataManager {
+    TaskCoreDataManager *taskManager = [[TaskCoreDataManager alloc] init];
+    return taskManager;
+}
 -(CoreDataTodoRepository *)coreDataTodoRepository {
-    CoreDataTodoRepository *coreDataRepo = [[CoreDataTodoRepository alloc] init];
+    CoreDataTodoRepository *coreDataRepo = [[CoreDataTodoRepository alloc] initWithTaskManager:self.taskCoreDataManager];
     return coreDataRepo;
 }
+
+#pragma mark - Creating Controllers
 -(TodoListViewController*)todoListController {
     TodoListInteractor *interactor = [[TodoListInteractor alloc] initWithTodoRepository:[self coreDataTodoRepository]];
     TodoListViewController *todoListVc = [[TodoListViewController alloc] initWithInteractor:interactor];

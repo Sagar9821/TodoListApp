@@ -8,7 +8,7 @@
 @import UIKit;
 @class TodoListInteractor;
 
-typedef void(^CreateTaskBlock)(void);
+typedef void(^CreateTaskBlock)(NSDate* date);
 
 
 @interface TodoListViewController : UIViewController

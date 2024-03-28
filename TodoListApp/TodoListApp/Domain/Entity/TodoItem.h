@@ -11,11 +11,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TodoItem : NSObject
-@property (assign, nonatomic) NSManagedObjectID *uniqID;
-@property (assign, nonatomic) NSString *taskTitle;
-@property (assign, nonatomic) NSString *taskDescription;
-@property (assign, nonatomic) BOOL isTaskCompleted;
-- (instancetype)initWithTitle:(NSString*)taskTitle andDescription:(NSString*)taskDescription andIsCompleted:(BOOL)isTaskCompleted;
+@property (nonatomic, copy) NSManagedObjectID *uniqID;
+@property (nonatomic, copy) NSDate *creationDate;
+@property (nonatomic, copy) NSString *taskTitle;
+@property (nonatomic, copy) NSString *taskDescription;
+@property (nonatomic) BOOL isTaskCompleted;
+- (instancetype)initWithTitle:(NSString*)taskTitle andDescription:(NSString*)taskDescription andIsCompleted:(BOOL)isTaskCompleted andCreationDate:(NSDate*)creationDate;
 -(instancetype)initWithManagedObject:(NSManagedObject*)managedObject;
 @end
 

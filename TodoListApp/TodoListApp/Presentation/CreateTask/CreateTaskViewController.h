@@ -9,6 +9,7 @@
 #import "CreateTaskInteractor.h"
 typedef void(^SaveTaskBlock)(void);
 @interface CreateTaskViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate>
+@property (nonatomic, strong) NSDate* createDate;
 @property (nonatomic, copy) SaveTaskBlock saveTaskBlock;
 - (instancetype)initWithInteractor:(CreateTaskInteractor*)interactor;
 @end

@@ -10,11 +10,13 @@
 #import "TodoItem.h"
 
 typedef void(^SelectedTaskBlock)(TodoItem  *item);
-
+typedef void(^DeleteTaskBlock)(TodoItem  *item);
 
 @interface TaskTableView :  NSObject <UITableViewDataSource,UITableViewDelegate>
--(instancetype)initWithArray:(NSArray *)tasks;
 @property (nonatomic, copy) SelectedTaskBlock taskSelectedBlock;
+@property (nonatomic, copy) DeleteTaskBlock taskDeleteBlock;
+@property (nonatomic, strong) NSMutableArray *array;
+-(instancetype)initWithArray:(NSMutableArray *)tasks;
 @end
 
 

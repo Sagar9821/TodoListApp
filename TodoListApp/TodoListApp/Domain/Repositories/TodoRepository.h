@@ -13,6 +13,7 @@
 - (NSArray *)fetchAllTask;
 - (void)addTodoItem:(TodoItem *)todoItem;
 - (void)updateTodoItem:(TodoItem *)todoItem;
+-(void)deleteTask:(TodoItem*)todoItem;
 @end
 
 

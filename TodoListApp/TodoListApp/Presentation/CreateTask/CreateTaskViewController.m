@@ -8,6 +8,9 @@
 #import "CreateTaskViewController.h"
 #import "CustomTextField.h"
 #import "AppColors.h"
+#import "ValidationHelper.h"
+#import "UIViewController+Reusable.h"
+
 
 @interface CreateTaskViewController ()
 @property (nonatomic, weak) IBOutlet CustomTextField *taskTitleTextField;
@@ -43,16 +46,23 @@
     self.taskDescriptionTextView.layer.borderColor = [UIColor backgroundWhite].CGColor;
     self.taskDescriptionTextView.textContainerInset = UIEdgeInsetsMake(16.0, 16.0, 16.0, 16.0);
     
-    [[[self navigationController] navigationBar] setPrefersLargeTitles:FALSE];
 }
-#pragma mark Action Methods
+#pragma mark - Action Methods
 -(IBAction)didTapOnSave:(UIButton*)sender {
-    [self.interactor addTodoItemWithTitle:self.taskTitleTextField.text andDescription:self.taskDescriptionTextView.text];
-    if(self.saveTaskBlock) {
-        self.saveTaskBlock();
+    
+    if ([ValidationHelper isWhitespaceOrEmpty:self.taskTitleTextField.text]) {
+        [self showAlertWithTitle:@"Error" message:@"Please enter task title." actionButtons:@[]];
+    } else if([ValidationHelper isWhitespaceOrEmpty:self.taskDescriptionTextView.text]) {
+        [self showAlertWithTitle:@"Error" message:@"Please enter task description." actionButtons:@[]];
+    } else {
+        [self.interactor addTodoItemWithTitle:self.taskTitleTextField.text andDescription:self.taskDescriptionTextView.text andCreateDate:self.createDate];
+        if(self.saveTaskBlock) {
+            self.saveTaskBlock();
+        }
     }
+    
 }
-#pragma mark TextField Delegates
+#pragma mark - TextField Delegates
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     textField.layer.borderColor = [UIColor midBlue].CGColor;
 }
@@ -61,7 +71,7 @@
     textField.layer.borderColor = [UIColor backgroundWhite].CGColor;
 }
 
-#pragma mark TextView Delegates
+#pragma mark - TextView Delegates
 -(void)textViewDidBeginEditing:(UITextView *)textView {
     textView.layer.borderColor = [UIColor midBlue].CGColor;
 }

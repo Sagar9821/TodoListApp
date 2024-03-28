@@ -21,8 +21,8 @@
     return [self.todoRepository fetchAllTask];
 }
 
--(void)addTodoItemWithTitle:(NSString *)title andDescription:(NSString *)description {
-    TodoItem *item = [[TodoItem alloc] initWithTitle:title andDescription:description andIsCompleted:TRUE];
+-(void)addTodoItemWithTitle:(NSString *)title andDescription:(NSString *)description andCreateDate:(NSDate*)date{
+    TodoItem *item = [[TodoItem alloc] initWithTitle:title andDescription:description andIsCompleted:FALSE andCreationDate:date];
     [self.todoRepository addTodoItem:item];
 }
 @end

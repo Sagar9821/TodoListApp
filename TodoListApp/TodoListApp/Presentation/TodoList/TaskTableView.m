@@ -7,14 +7,14 @@
 
 #import "TaskTableView.h"
 #import "TaskCell.h"
+#import "AppColors.h"
 
 @interface TaskTableView ()
-@property (nonatomic, strong) NSArray *array;
 @end
 
 @implementation TaskTableView
 
--(instancetype)initWithArray:(NSArray *)tasks {
+-(instancetype)initWithArray:(NSMutableArray *)tasks {
     self = [super init];
     if (self) {
         _array = tasks;
@@ -22,14 +22,16 @@
     return self;
 }
 
+#pragma mark - UITableViewDataSource
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    return 1;
+        return 1;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    TaskCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TaskCell"];
-    [cell configureCellWith:self.array[indexPath.row]];
+    TaskCell *cell = [tableView dequeueReusableCellWithIdentifier:TaskCell.reuseIdentifier forIndexPath:indexPath];
+    TodoItem *item = self.array[indexPath.row];
+    [cell configureCellWith:item];
     return cell;
 }
 
@@ -37,13 +39,34 @@
     return self.array.count;
 }
 
+#pragma mark - UITableViewDelegates
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     TodoItem *item = [self.array objectAtIndex:indexPath.row];
-    if (self.taskSelectedBlock) {
-           self.taskSelectedBlock(item);
-       }
+    if(!item.isTaskCompleted) {
+        [[self.array objectAtIndex:indexPath.row] setIsTaskCompleted:TRUE];
+        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
+        if(self.taskSelectedBlock) {
+            self.taskSelectedBlock(item);
+        }
+    }
+    
+    
 }
-
-
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        if(self.taskDeleteBlock) {
+            
+            TodoItem *item = [self.array objectAtIndex:indexPath.row];
+            
+            [self.array removeObjectAtIndex:indexPath.row];
+            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            
+            self.taskDeleteBlock(item);
+            
+        }
+    }
+}
 
 @end

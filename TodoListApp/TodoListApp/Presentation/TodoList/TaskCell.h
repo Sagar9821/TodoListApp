@@ -10,10 +10,6 @@
 
 
 @interface TaskCell : UITableViewCell
-@property(nonatomic, weak) IBOutlet UILabel *taskLabel;
-@property(nonatomic, weak) IBOutlet UILabel *taskDescriptionLabel;
-@property(nonatomic, weak) IBOutlet UIView *containerView;
-@property(nonatomic, weak) IBOutlet UIButton *buttonComplete;
 +(NSString *)reuseIdentifier;
 +(NSString *)nibName;
 -(void)configureCellWith:(TodoItem*)item;
